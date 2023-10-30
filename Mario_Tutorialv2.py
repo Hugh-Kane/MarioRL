@@ -46,6 +46,24 @@ for step in range(10000):
 env.close()
 
 """
+with the latest version of Gym use the following:
+
+env = gym_super_mario_bros.make('SuperMarioBros-v0', apply_api_compatibility=True, render_mode="human")
+env = JoypadSpace(env,SIMPLE_MOVEMENT)
+
+done = True
+for step in range(10000):
+    #Start the game to begin with
+    if done:
+        env.reset()
+    # Do random actions
+    observation, reward, terminated, truncated, info = env.step(env.action_space.sample())
+    done = terminated or truncated
+    env.render()
+# Close the game
+env.close()
+
+
 
 ## Preprocessing environment
 
