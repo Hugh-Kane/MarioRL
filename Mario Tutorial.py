@@ -7,7 +7,7 @@ from gym_super_mario_bros.actions import SIMPLE_MOVEMENT
 
 #print(SIMPLE_MOVEMENT)
 
-"""
+
 #Setuo game 
 #env = gym_super_mario_bros.make('SuperMarioBros-v0')
 env = gym_super_mario_bros.make('SuperMarioBros-v0',apply_api_compatibility=True,render_mode="human" )
@@ -33,8 +33,7 @@ for step in range(100000):
     env.render()
 #Close the game
 env.close()
-"""
-
+""""""
 
 """
 #Preprocessing step
